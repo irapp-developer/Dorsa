@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr_default"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dorsa.psb.com.dorsa.MainActivity">
+
+
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/frg_intro_1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="انتخاب عکس"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/frg_kid_img_selected"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/frg_intro_1_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_girl"
+
+
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/frg_add_kid_details_sex_linear"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/frg_kid_img_selected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/frg_kid_img_rel_girls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/girls_avatar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_kid_img_rel_boys"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/boy_avetars" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
+        android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
+        android:layout_below="@+id/frg_add_kid_details_sex_linear"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <dorsa.psb.com.dorsa.other.cButton
+            android:id="@+id/frg_kid_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yellow"
+            android:text="مرحله قبل"
+            android:textColor="@color/ButtonText"
+            android:textSize="14sp" />
+
+        <dorsa.psb.com.dorsa.other.cButton
+            android:id="@+id/frg_kid_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yellow"
+            android:text="افزودن"
+            android:textColor="@color/ButtonText"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <!--<dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/frg_intro_1_accept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/frg_intro_1_desc"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_yellow"
+        android:textColor="#006064"
+        android:textSize="12sp"
+        android:text="می پذیرم"
+        />
+
+
+    <dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/frg_intro_1_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_gray"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:text="خروج"
+        />-->
+
+
+</RelativeLayout>

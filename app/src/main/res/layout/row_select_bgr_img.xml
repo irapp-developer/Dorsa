@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    
+    >
+<ImageView
+    android:id="@+id/row_select_bgr"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/bgr_default"
+    />
+    <ImageView
+        android:id="@+id/row_select_stroke"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/stroke_black"
+        />
+    
+</RelativeLayout>

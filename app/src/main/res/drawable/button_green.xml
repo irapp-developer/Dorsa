@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  Non focused states
+     -->
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="false">
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:endColor="#a6d418" android:startColor="#88ac1d" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:endColor="#a6d418" android:startColor="#88ac1d" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!--  Focused states
+     -->
+    <item android:state_focused="true" android:state_pressed="false" android:state_selected="false">
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:endColor="#88ac1d" android:startColor="#a6d418" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_pressed="false" android:state_selected="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:endColor="#88ac1d" android:startColor="#a6d418" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <!--  Pressed
+     -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:endColor="#88ac1d" android:startColor="#a6d418" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <!--  Disable states -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:endColor="#88ac1d" android:startColor="#a6d418" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</selector>

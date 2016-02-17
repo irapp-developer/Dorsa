@@ -1,0 +1,43 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">درسا</string>
+    <string name="launcher">درسا کودک</string>
+    
+    
+    <string name="action_settings">تنظیمات</string>
+
+    <string name="select_password_mode_1">جهت استفاده از برنامه بایستی یک رمز ورود و یا یک الگو برای خود انتخاب نمایید \nبه همین منظور یکی از گزینه های زیر را انتخاب کنید</string>
+    <string name="hint_password">برای بازیابی رمز ورود شماره موبایل خود را وارد نموده و به انتخاب خود به یکی از سوالات پاسخ دهید</string>
+    <string name="clear_defaults">درحال حاضر برنامه دیگری مدیریت صفحه خانگی را بر عهده دارد ٬برای تغییر آن \nابتدا دکمه تغییر را فشرده و در صفحه باز شده گزینه Clear Defaults را انتخاب کرده و به برنامه بازگردید</string>
+    <string name="select_launcher">جهت مدیریت برنامه توسط درسا \nابتدا دکمه تایید را فشرده و از لیست باز شده درسارا انتخاب کرده و گزینه ی Allways را فشار دهید</string>
+    
+    <string-array name="hint_questions">
+        <item>نام اولین مدرستان</item>
+        <item >محل تولد مادرتان</item>
+        <item >محل تول پدرتان</item>
+        <item >غذای مورد علاقه</item>
+        <item >رنگ مورد علاقه تان</item>
+        
+    </string-array>
+    
+    <string name="pl_cancel">انصراف</string>
+    <string name="pl_confirm">تایید</string>
+    <string name="pl_confirm_pattern">الگوی خود را دوباره رسم نمایید</string>
+    <string name="pl_continue">ادامه</string>
+    <string name="pl_draw_pattern">الگوی مورد نظر خود را رسم نمایید</string>
+    <string name="pl_draw_pattern_to_unlock">الگوی خود را رسم نمایید</string>
+    <string name="pl_forgot_pattern">بازیابی الگو</string>
+    <string name="pl_pattern_confirmed">الگوی شما تایید گردید برای ادامه دکمه تایید را فشار دهید</string>
+    <string name="pl_pattern_recorded">الگو دخیره گردید برای ادامه دکمه ادامه را فشار دهید</string>
+    <string name="pl_pattern_too_short">حداقل از %d نقطه استفاده نمایید</string>
+    <string name="pl_recording_pattern">پس از اتمام رسم انگشت خود را بردارید</string>
+    <string name="pl_redraw">رسم مجدد</string>
+    <string name="pl_wrong_pattern">الگو اشتباه است ٬ دوباره تلاش کنید</string>
+
+    <string name="pl_access_pattern_start">Pattern started</string>
+    <string name="pl_access_pattern_cleared">Pattern cleared</string>
+    <string name="pl_access_pattern_cell_added">Cell added</string>
+    <string name="pl_access_pattern_cell_added_verbose">Cell <xliff:g id="cell_index" example="3">%1$s</xliff:g> added</string>
+    <string name="pl_access_pattern_detected">Pattern completed</string>
+    <string name="pl_access_pattern_area">Pattern area.</string>
+    
+</resources>

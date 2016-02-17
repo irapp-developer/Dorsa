@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="310dp"
+    android:background="@drawable/bgr_round_dialog"
+    android:padding="5dp">
+
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/dialog_pick_date_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="تاریخ تولد"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/icon_cross"
+        />
+
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/dialog_pick_date_title_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialog_pick_date_year_picker"
+        android:layout_alignRight="@+id/dialog_pick_date_year_picker"
+        android:layout_below="@+id/dialog_pick_date_title"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="سال"
+        android:textColor="@color/colorYellow"
+        android:textSize="14sp"
+
+        />
+
+    <dorsa.psb.com.dorsa.other.cNumberPicker
+        android:id="@+id/dialog_pick_date_year_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialog_pick_date_title_year" 
+        android:layout_marginLeft="25dp"
+        />
+
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/dialog_pick_date_title_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialog_pick_date_month_picker"
+        android:layout_alignRight="@+id/dialog_pick_date_month_picker"
+        android:layout_below="@+id/dialog_pick_date_title"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ماه"
+        android:textColor="@color/colorYellow"
+        android:textSize="14sp" />
+
+    <dorsa.psb.com.dorsa.other.cNumberPicker
+        android:id="@+id/dialog_pick_date_month_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_pick_date_title_month"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/dialog_pick_date_year_picker"
+        />
+    <dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/dialog_pick_date_month_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:layout_below="@+id/dialog_pick_date_month_picker"
+        android:background="@drawable/button_green"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/dialog_pick_date_year_picker"
+        android:layout_alignRight="@+id/dialog_pick_date_month_picker"
+        android:layout_marginTop="10dp"
+        android:text="تایید"
+            
+        />
+
+</RelativeLayout>

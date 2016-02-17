@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:strokeAttrs="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgr_default"
+    android:id="@+id/act_launcher_parentRel"
+    >
+<RelativeLayout
+    android:id="@+id/act_launcher_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:background="#7c000000"
+    >
+    <ImageView
+        android:id="@+id/act_launcher_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_close"
+        />
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/act_launcher_kid_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/act_launcher_kid_name"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="مهدی شجاعیان"
+        android:textColor="#fff"
+        strokeAttrs:strokeWidth="15"
+
+        />
+    <ImageView
+        android:id="@+id/act_launcher_kid_name"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:src="@drawable/icon_boy"
+        />
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/act_launcher_actionbar"
+        android:background="@drawable/shadow"
+        />
+    <!--android:background="@drawable/bgr_round_blue"-->
+    
+    <RelativeLayout
+        android:id="@+id/act_launcher_rel_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+    <ImageView
+        android:id="@+id/act_launcher_clock_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/act_launcher_clock_clock"
+        android:padding="10dp"
+        android:src="@drawable/icon_clock"
+        />
+    <dorsa.psb.com.dorsa.other.StrokeTextView
+        android:id="@+id/act_launcher_clock_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/act_launcher_calendar_icon"
+        android:layout_alignTop="@+id/act_launcher_clock_icon"
+        android:layout_alignBottom="@+id/act_launcher_clock_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        strokeAttrs:strokeColor="#adffffff"
+        strokeAttrs:strokeTextColor="#000000"
+        strokeAttrs:strokeWidth="10"
+        android:text="۷:۴۵"
+        />
+    <ImageView
+        android:id="@+id/act_launcher_calendar_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/act_launcher_clock_icon"
+        android:layout_toRightOf="@+id/act_launcher_clock_day"
+        android:padding="10dp"
+        android:src="@drawable/icon_calendar"
+        />
+    <dorsa.psb.com.dorsa.other.StrokeTextView
+        android:id="@+id/act_launcher_clock_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/act_launcher_clock_icon"
+        android:layout_alignBottom="@+id/act_launcher_clock_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:textSize="15sp"
+        strokeAttrs:strokeColor="#adffffff"
+        strokeAttrs:strokeTextColor="#000000"
+        strokeAttrs:strokeWidth="10"
+        android:text="پنجشنبه ٬۱۷ شهریور"
+        />
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/act_launcher_actionbar"
+        android:layout_above="@+id/act_launcher_rel_calendar"
+        >
+        
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/act_launcher_mainRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            
+            
+            ></android.support.v7.widget.RecyclerView>
+        
+    </FrameLayout>
+    
+</RelativeLayout>

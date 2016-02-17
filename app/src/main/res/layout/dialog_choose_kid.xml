@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/bgr_round_dialog"
+    android:padding="5dp"
+    >
+
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/dialog_manage_chid_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:text="مدیریت کودکان"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_manage_chid_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dialog_manage_chid_top_title"
+        android:layout_above="@+id/dialog_manage_chid_btn_back"
+        android:layout_marginTop="5dp"
+        ></android.support.v7.widget.RecyclerView>
+    
+    <dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/dialog_manage_chid_btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:background="@drawable/button_yellow"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/ButtonText"
+        android:textSize="12sp"
+        android:text="بازگشت"
+        />
+</RelativeLayout>

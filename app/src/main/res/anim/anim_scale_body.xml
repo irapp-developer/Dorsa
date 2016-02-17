@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+    <rotate
+        android:duration="300"
+        android:fromDegrees="0"
+        android:toDegrees="-5"
+        android:pivotY="100%"
+        android:pivotX="15.62%"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        />
+    <rotate
+        android:duration="200"
+        android:startOffset="300"
+        android:fromDegrees="0"
+        android:toDegrees="5"
+        android:pivotY="100%"
+        android:pivotX="15.62%"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        />
+    <rotate
+        android:duration="300"
+        android:startOffset="500"
+        android:fromDegrees="0"
+        android:toDegrees="5"
+        android:pivotY="100%"
+        android:pivotX="84.37%"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        />
+
+    <rotate
+        android:duration="200"
+        android:startOffset="800"
+        android:fromDegrees="0"
+        android:toDegrees="-5"
+        android:pivotY="100%"
+        android:pivotX="84.37%"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        />
+    
+    <scale
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:duration="500"
+        android:startOffset="2000"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromXScale="100%"
+        android:fromYScale="100%"
+        android:pivotX="50%"
+        android:pivotY="100%"
+        android:toXScale="100%"
+        android:toYScale="80%" />
+    <scale
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:duration="300"
+        android:startOffset="2500"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromXScale="100%"
+        android:fromYScale="100%"
+        android:pivotX="50%"
+        android:pivotY="100%"
+        android:toXScale="100%"
+        android:toYScale="125%" />
+   
+</set>

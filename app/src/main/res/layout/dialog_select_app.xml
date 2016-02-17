@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_ask_select_app_main_rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    
+    >
+
+    <View
+        android:id="@+id/dialog_ask_select_app_btn_yes1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dialog_ask_btn_submit"
+        android:layout_below="@+id/dialog_ask_select_app_topbgr"
+        android:background="#fff" />
+
+    <View
+        android:id="@+id/dialog_ask_select_app_topbgr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" />
+
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/dialog_ask_select_app_topbgr"
+        android:layout_alignLeft="@+id/dialog_ask_select_app_topbgr"
+        android:layout_alignRight="@+id/dialog_ask_select_app_topbgr"
+        android:layout_alignTop="@+id/dialog_ask_select_app_topbgr"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center"
+        android:text="انتخاب برنامه"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_select_app_recView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dialog_ask_btn_no"
+        android:layout_below="@+id/dialog_ask_select_app_topbgr"
+        android:minHeight="200dp" />
+
+    <dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/dialog_ask_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight=".99"
+        android:background="@drawable/button_blue"
+        android:text="بازگشت"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+</RelativeLayout>
+    
+    
+    
+    
+

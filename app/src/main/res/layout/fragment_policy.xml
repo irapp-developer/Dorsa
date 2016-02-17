@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="dorsa.psb.com.dorsa.MainActivity"
+    android:background="@drawable/bgr_default"
+    >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bug"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" 
+        android:layout_alignLeft="@+id/monster_2_rel"
+        android:layout_alignRight="@+id/monster_2_rel"
+        android:layout_alignBottom="@+id/monster_2_rel"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-13dp"
+        android:src="@drawable/anim_shadow"
+        />
+    
+    
+    <RelativeLayout
+        android:id="@+id/monster_2_rel"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/monster_2"
+            />
+        <ImageView
+            android:id="@+id/monster_2_eye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@anim/monster_2_eye"
+            />
+    </RelativeLayout>
+   
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/frg_intro_1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="به برنامه درسا خوش آمدید"
+        />
+    <dorsa.psb.com.dorsa.other.CTextView
+        android:id="@+id/frg_intro_1_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_intro_1_title"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="درسا لیست برنامه های نصب شده بر روی گوشی شما را استخراج نموده و آن ها را ذخیره خواهد نمود \nشما می توانید از این لیست انتخاب نمایید که فرزندتان به کدام برنامه ها دسترسی خواهد داشت."
+        />
+   
+    <dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/frg_intro_1_accept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/frg_intro_1_desc"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_yellow"
+        android:textColor="#006064"
+        android:textSize="12sp"
+        android:text="می پذیرم"
+        />
+    
+    
+    <dorsa.psb.com.dorsa.other.cButton
+        android:id="@+id/frg_intro_1_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_gray"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:text="خروج"
+        />
+    
+    
+</RelativeLayout>

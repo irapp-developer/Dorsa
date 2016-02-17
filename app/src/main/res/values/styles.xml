@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+        
+            
+
+    </style>
+
+    <style name="Base.PatternView" parent="">
+        <item name="aspect">square</item>
+    </style>
+
+    <style name="PatternView" parent="Base.PatternView">
+        <item name="regularColor">?colorControlNormal</item>
+        <item name="errorColor">#fff4511e</item>
+        <item name="successColor">?colorControlActivated</item>
+    </style>
+
+    <style name="PatternView.Light" parent="Base.PatternView">
+        <item name="regularColor">?colorControlNormal</item>
+        <item name="errorColor">#fff4511e</item>
+        <item name="successColor">?colorControlActivated</item>
+    </style>
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_light</item>
+        <item name="android:textColor">#ffffff</item>
+        
+    </style>
+
+    <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/apptheme_btn_radio_holo_light</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#60000000</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@android:color/transparent</item> <!-- Or any color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    
+</resources>

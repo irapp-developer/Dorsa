@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/frg_intro_1_bug_shadow"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/frg_intro_1_bug_rel"
+        android:layout_alignRight="@+id/frg_intro_1_bug_rel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/anim_shadow"
+        />
+    <RelativeLayout
+        android:id="@+id/frg_intro_1_bug_rel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp" >
+
+        <ImageView
+            android:id="@+id/frg_intro_1_bug"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anim_normal"
+            />
+        <ImageView
+            android:id="@+id/frg_intro_1_bug_eye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@anim/anim_eye"
+            />
+    </RelativeLayout>
+</RelativeLayout>
