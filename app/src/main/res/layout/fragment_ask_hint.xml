@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr_blur"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ir.dorsa.dorsaworld.MainActivity">
+    
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/frg_reset_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="بازیابی رمز "
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/frg_reset_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_reset_title"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/reset_password"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+
+   
+   
+
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/frg_reset_text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_reset_desc"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:text="نمام اولین مدرسان"
+        />
+
+    <RelativeLayout
+        android:id="@+id/frg_reset_answer_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_reset_text_question"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_reset_hint_answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/frg_reset_answer"
+            android:layout_alignLeft="@+id/frg_reset_answer"
+            android:layout_alignRight="@+id/frg_reset_answer"
+            android:layout_alignTop="@+id/frg_reset_answer"
+            android:gravity="right|center_vertical"
+            android:paddingRight="15dp"
+            android:text="جواب"
+            android:textColor="#ebfe43"
+            android:textSize="14sp" />
+
+        <ir.dorsa.dorsaworld.other.cEditText
+            android:id="@+id/frg_reset_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/edittext_yellow"
+            android:textCursorDrawable="@drawable/cursor_yellow_1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ir.dorsa.dorsaworld.other.cButton
+        android:id="@+id/frg_reset_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_yellow"
+        android:textColor="#006064"
+        android:textSize="16sp"
+        android:text="تایید"
+
+        />
+
+</RelativeLayout>

@@ -2,20 +2,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
     android:layout_height="250dp"
-    android:background="@drawable/bgr_round_dialog"
+    android:background="@drawable/bgr_dialog_white"
     android:padding="5dp"
+    android:id="@+id/dialog_manage_chid_main_rel"
     >
-
-    <dorsa.psb.com.dorsa.other.CTextView
+   
+    <ir.dorsa.dorsaworld.other.CTextView
         android:id="@+id/dialog_manage_chid_top_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:gravity="center_horizontal"
-        android:textColor="#fff"
+        android:gravity="center"
+        android:textColor="#ababab"
         android:textSize="14sp"
         android:text="مدیریت کودکان"
         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/dialog_manage_chid_top_title"
+        android:background="#a6a6a6"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    
     <android.support.v7.widget.RecyclerView
         android:id="@+id/dialog_manage_chid_list"
         android:layout_width="match_parent"
@@ -23,17 +33,19 @@
         android:layout_below="@+id/dialog_manage_chid_top_title"
         android:layout_above="@+id/dialog_manage_chid_btn_back"
         android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/cursor_white"
         ></android.support.v7.widget.RecyclerView>
     
-    <dorsa.psb.com.dorsa.other.cButton
+    <ir.dorsa.dorsaworld.other.cButton
         android:id="@+id/dialog_manage_chid_btn_back"
         android:layout_width="match_parent"
         android:layout_height="40dp" 
-        android:background="@drawable/button_yellow"
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"
+        android:background="@drawable/button_light_blue"
+        android:layout_margin="10dp"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/ButtonText"
+        android:textColor="#000000"
         android:textSize="12sp"
         android:text="بازگشت"
         />

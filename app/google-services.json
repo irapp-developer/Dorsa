@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "1006238800578",
+    "project_id": "firebase-dorsa-world"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006238800578:android:b739375afbbd9cf0",
+        "android_client_info": {
+          "package_name": "ir.dorsa.dorsaworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTIlnqWSDUrijxtCOdj-1ynusNZf2yJp4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-75053863-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

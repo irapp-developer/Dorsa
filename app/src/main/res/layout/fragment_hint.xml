@@ -3,134 +3,198 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgr_blur"
+    android:background="@drawable/bgr_nature"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="dorsa.psb.com.dorsa.MainActivity">
+    tools:context="ir.dorsa.dorsaworld.MainActivity">
 
-
-    <dorsa.psb.com.dorsa.other.CTextView
-        android:id="@+id/frg_hint_title"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:text="راهنمایی رمز"
-        android:textColor="#fff"
-        android:textSize="17sp" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
 
-    <dorsa.psb.com.dorsa.other.CTextView
-        android:id="@+id/frg_hint_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/frg_hint_title"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="@string/hint_password"
-        android:textColor="#fff"
-        android:textSize="13sp" />
-
-    <RelativeLayout
-        android:id="@+id/frg_hint_phone_rel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/frg_hint_desc"
-        android:layout_marginTop="10dp"
-        android:padding="10dp">
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/frg_hint_phone_number"
-            android:layout_alignRight="@+id/frg_hint_phone_number"
-            android:layout_alignTop="@+id/frg_hint_phone_number"
-            android:padding="7dp"
-            android:src="@drawable/icon_phone" />
-
-        <dorsa.psb.com.dorsa.other.CTextView
-            android:id="@+id/frg_hint_hint_phone_number"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/frg_hint_phone_number"
-            android:layout_alignLeft="@+id/frg_hint_phone_number"
-            android:layout_alignRight="@+id/frg_hint_phone_number"
-            android:layout_alignTop="@+id/frg_hint_phone_number"
-            android:gravity="right|center_vertical"
-            android:paddingRight="45dp"
-            android:text="شماره موبایل"
-            android:textColor="#ebfe43"
-            android:textSize="14sp" />
+            android:layout_height="match_parent">
 
-        <dorsa.psb.com.dorsa.other.cEditText
-            android:id="@+id/frg_hint_phone_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_yellow"
-            android:numeric="integer"
-            android:textColor="#fff"
-            android:textCursorDrawable="@drawable/cursor_yellow_1"
-            android:textSize="16sp"
-            android:singleLine="true"
-            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bgr_round_dialog_white"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
 
-    </RelativeLayout>
+                <ir.dorsa.dorsaworld.other.CTextView
+                    android:id="@+id/frg_hint_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="راهنمایی رمز"
+                    android:textColor="#11bbdc"
+                    android:textSize="17sp" />
 
-    <Spinner
-        android:id="@+id/frg_hint_spinner_question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/frg_hint_phone_rel"
-        android:layout_marginTop="10dp"
-        android:entries="@array/hint_questions"
-        android:popupBackground="#60000000"
-        android:background="@drawable/apptheme_spinner_background_holo_light"
-        ></Spinner>
+                <ir.dorsa.dorsaworld.other.CTextView
+                    android:id="@+id/frg_hint_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_hint_icon"
+                    android:gravity="center"
+                    android:text="@string/hint_password"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
 
-    <RelativeLayout
-        android:id="@+id/frg_hint_answer_rel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/frg_hint_spinner_question"
-        android:layout_marginTop="10dp"
-        android:padding="10dp">
+                <ImageView
+                    android:id="@+id/frg_hint_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_question" />
 
-        <dorsa.psb.com.dorsa.other.CTextView
-            android:id="@+id/frg_hint_hint_answer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/frg_hint_answer"
-            android:layout_alignLeft="@+id/frg_hint_answer"
-            android:layout_alignRight="@+id/frg_hint_answer"
-            android:layout_alignTop="@+id/frg_hint_answer"
-            android:gravity="right|center_vertical"
-            android:paddingRight="15dp"
-            android:text="جواب"
-            android:textColor="#ebfe43"
-            android:textSize="14sp" />
+                <RelativeLayout
+                    android:id="@+id/frg_hint_phone_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_hint_desc"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
 
-        <dorsa.psb.com.dorsa.other.cEditText
-            android:id="@+id/frg_hint_answer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:background="@drawable/edittext_yellow"
-            android:textCursorDrawable="@drawable/cursor_yellow_1"
-            android:textSize="16sp" />
-    </RelativeLayout>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/frg_hint_phone_number"
+                        android:layout_alignRight="@+id/frg_hint_phone_number"
+                        android:layout_alignTop="@+id/frg_hint_phone_number"
+                        android:padding="7dp"
+                        android:src="@drawable/icon_phone" />
 
-    <dorsa.psb.com.dorsa.other.cButton
-        android:id="@+id/frg_hint_confirm"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/button_yellow"
-        android:textColor="#006064"
-        android:textSize="16sp"
-        android:text="تایید"
+                    <ir.dorsa.dorsaworld.other.cEditText
+                        android:id="@+id/frg_hint_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_yellow"
+                        android:gravity="left"
+                        android:hint="شماره موبایل"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:paddingLeft="30dp"
+                        android:textColor="#000"
+                        android:textColorHint="#11bbdc"
+                        android:textCursorDrawable="@drawable/cursor_yellow_1"
+                        android:textSize="13sp" />
+                </RelativeLayout>
 
-        />
+                <Spinner
+                    android:id="@+id/frg_hint_spinner_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_hint_phone_rel"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/apptheme_spinner_background_holo_light"
+                    android:entries="@array/hint_questions"
+                    android:popupBackground="#60000000"></Spinner>
+
+                <RelativeLayout
+                    android:id="@+id/frg_hint_answer_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_hint_spinner_question"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <ir.dorsa.dorsaworld.other.CTextView
+                        android:id="@+id/frg_hint_hint_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/frg_hint_answer"
+                        android:layout_alignLeft="@+id/frg_hint_answer"
+                        android:layout_alignRight="@+id/frg_hint_answer"
+                        android:layout_alignTop="@+id/frg_hint_answer"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="15dp"
+                        android:text="جواب"
+                        android:textColor="#11bbdc"
+                        android:textSize="14sp" />
+
+                    <ir.dorsa.dorsaworld.other.cEditText
+                        android:id="@+id/frg_hint_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_yellow"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        android:textCursorDrawable="@drawable/cursor_yellow_1"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_hint_answer_rel">
+
+                    <ir.dorsa.dorsaworld.other.CTextView
+                        android:id="@+id/frg_hint_backdour_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/hint_back_dour_title"
+                        android:textColor="#11bbdc"
+                        android:textSize="17sp" />
+
+                    <ir.dorsa.dorsaworld.other.CTextView
+                        android:id="@+id/frg_hint_backdour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frg_hint_backdour_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/hint_back_dour"
+                        android:textColor="#6f6f6f"
+                        android:textSize="14sp" />
+
+                    <ir.dorsa.dorsaworld.other.cEditText
+                        android:id="@+id/frg_hint_backdour_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frg_hint_backdour"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_yellow"
+                        android:gravity="left"
+                        android:hint="شماره اضطراری"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        android:textColorHint="#11bbdc"
+                        android:textCursorDrawable="@drawable/cursor_yellow_1"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/frg_hint_confirm"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/frg_hint_backdour_edittext"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/btn_ok_big"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

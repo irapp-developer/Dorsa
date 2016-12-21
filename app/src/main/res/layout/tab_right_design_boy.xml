@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bgr_tab_right_boy"
+    android:id="@+id/tab_main_rel_right"
+    >
+
+    <!-- Tab title -->
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@drawable/tab_text_color_boy"
+        android:text="مهدی"
+        />
+    
+</RelativeLayout>

@@ -1,41 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dorsa.psb.com.dorsa">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.dorsa.dorsaworld"
+    android:sharedUserId="com.psb.dorsa">
 
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
+        tools:replace="android:supportsRtl"
+        android:name=".App"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_parent"
         android:label="@string/app_name"
-        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
             android:name=".launcher"
-            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:icon="@mipmap/ic_launcher_kid"
             android:label="@string/launcher"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor"
             android:stateNotNeeded="true"
-            android:theme="@style/AppTheme"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:windowSoftInputMode="stateUnspecified|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.HOME" />
+                <!-- <category android:name="android.intent.category.HOME" /> -->
                 <category android:name="android.intent.category.DEFAULT" />
                 <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             </intent-filter>
         </activity>
         <activity
             android:name=".Activity_Parent"
-            >
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/AppTheme_noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,22 +72,50 @@
         </activity>
         <activity
             android:name=".Activity_Launcher_Kid"
+            android:icon="@mipmap/ic_launcher_kid"
             android:label="@string/launcher"
-            android:theme="@style/AppTheme">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_pattern" />
-        <activity android:name=".Activity_Intro" />
-        <activity android:name=".Activity_Get_Password" />
-        <activity android:name=".Activity_GetPattern" />
-        <activity android:name=".Activity_Add_Child" />
-        <activity android:name=".Activity_Parent_Settings" />
+        <activity
+            android:name=".Activity_pattern"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Intro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Get_Password"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_GetPattern"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Add_Child"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".Activity_Parent_Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Light.noActionBar"
+            />
+        <activity
+            android:name=".Activity_Reset_Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Calendar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Activity_Select_Background"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Translucent" />
 
         <receiver
@@ -76,12 +131,130 @@
         <activity
             android:name=".service.Close_RecentApps"
             android:enabled="true"
-            android:exported="true"></activity>
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_WatchDog"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Intro_Schedual"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Dialog"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:process=":error_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Dialog" />
 
+        <service
+            android:name="org.acra.sender.SenderService"
+            android:exported="false"
+            android:process=":acra" />
         <service
             android:name=".service.Service_Launcher"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+        <service
+            android:name=".service.Service_Whatchdog"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.Service_WaitForRunn"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".service.Broadcast_Network_Change"
+            android:enabled="true"
+            android:exported="true">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            -->
+
+        </receiver>
+        <receiver
+            android:name=".service.Broadcast_Airplane_Mode"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".service.Service_RunInBackground"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".service.Broadcast_Recieve_Call"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".service.PolicyAdmin"
+            android:description="@string/admin_policy"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".service.Broadcast_Reset"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.Service_Watchdog_BGR"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="eu.janmuller.android.simplecropimage.CropImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_present"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.Service_version_notification"
+            android:exported="false" />
+
+        <receiver
+            android:name=".service.Broadcast_recieve_SMS"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity_Parent_Hint"
+            android:theme="@style/AppTheme_noActionBar"
+            ></activity>
     </application>
 
 </manifest>

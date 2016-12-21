@@ -1,24 +1,53 @@
 <resources xmlns:xliff="http://schemas.android.com/tools">
-    <string name="app_name">درسا</string>
-    <string name="launcher">درسا کودک</string>
-    
-    
+    <string name="app_name">تنظیمات دنیای درسا</string>
+    <string name="launcher">دنیای درسا</string>
+
+
+    <string name="hint">برنامه ای موجود نیست\nبرای افزودن برنامه از گزینه بعلاوه استفاده نمایید</string>
+    <string name="hint_emergency_exit">برای خروج اضطراری٬ از شماره ای که تعیین نموده اید به این گوشی پیامک off را ارسال نمایید</string>
+
+
     <string name="action_settings">تنظیمات</string>
+    <string name="action_about">درباره</string>
+    <string name="action_help">راهنمایی</string>
+    <string name="action_contact">تماس با ما</string>
 
     <string name="select_password_mode_1">جهت استفاده از برنامه بایستی یک رمز ورود و یا یک الگو برای خود انتخاب نمایید \nبه همین منظور یکی از گزینه های زیر را انتخاب کنید</string>
     <string name="hint_password">برای بازیابی رمز ورود شماره موبایل خود را وارد نموده و به انتخاب خود به یکی از سوالات پاسخ دهید</string>
+    <string name="reset_password">برای بازیابی رمز به سوال زیر پاسخ دهید</string>
     <string name="clear_defaults">درحال حاضر برنامه دیگری مدیریت صفحه خانگی را بر عهده دارد ٬برای تغییر آن \nابتدا دکمه تغییر را فشرده و در صفحه باز شده گزینه Clear Defaults را انتخاب کرده و به برنامه بازگردید</string>
     <string name="select_launcher">جهت مدیریت برنامه توسط درسا \nابتدا دکمه تایید را فشرده و از لیست باز شده درسارا انتخاب کرده و گزینه ی Allways را فشار دهید</string>
+    <string name="select_task">برای اینکه برنامه به درستی کار کند بایستی به صفحه ای که هدایت می شوید گزینه درسا را فعال نمایید</string>
+    <string name="hint_back_dour">اگر به هر دلیلی نتوانستید از برنامه ی کنترل کودک خارج شوید٬ با ارسال کلمه off از شماره زیر به شماره این گوشی می توانید از برنامه خارج شوید </string>
+    <string name="hint_back_dour_title">خروج اضطراری</string>
+
+
+    <string name="crash">با عرض پوزش ٬گویا خطایی در انجام برنامه رخ داده است \nجهت بهبود این مشکل می توانید این مشکل را برای ما گزارش نمایید</string>
+    <string name="crash_toast_text">اشکال در اجرای برنامه</string>
+    <string name="crash_dialog_title">اشکال در اجرای برنامه</string>
+    <string name="crash_dialog_ok_toast">از شما متشکریم</string>
+
+
+    <string name="noti_titleـkid">دنیای درسا</string>
+    <string name="noti_descـkid">درسا مراقب شماست</string>
+   
     
+    
+    <string name="about_dialog"> زیست بوم مجازی خانواده درسا، امکان ارتباط سالم کودکان و نوجوانان را در قالب سرویس های متنوع و جذاب فراهم می آورد. 
+برنامه دنیای درسا این امکان را به شما می دهد تا فرزندانتان در دنیایی شاد و زیبا و در امنیت کامل، از برنامه مختلف استفاده نمایند. در این دنیا شما میتوانید این برنامه را برای فرزندان خود مدیریت و کنترل نمایید.</string>
+    <string name="contact_dialog">لطفاً مشکلات و پیشنهادات خود را به آدرس support@dorsalife.ir ارسال نمائید. </string>
+
+    <string name="admin_policy">برای جلوگیری از پاک شدن برنامه نیاز دارید که این تیک فعال شود</string>
+
     <string-array name="hint_questions">
-        <item>نام اولین مدرستان</item>
-        <item >محل تولد مادرتان</item>
-        <item >محل تول پدرتان</item>
-        <item >غذای مورد علاقه</item>
-        <item >رنگ مورد علاقه تان</item>
-        
+        <item>نام اولین مدرسه تان</item>
+        <item>محل تولد مادرتان</item>
+        <item>محل تولد پدرتان</item>
+        <item>غذای مورد علاقه</item>
+        <item>رنگ مورد علاقه تان</item>
+
     </string-array>
-    
+
     <string name="pl_cancel">انصراف</string>
     <string name="pl_confirm">تایید</string>
     <string name="pl_confirm_pattern">الگوی خود را دوباره رسم نمایید</string>
@@ -36,8 +65,11 @@
     <string name="pl_access_pattern_start">Pattern started</string>
     <string name="pl_access_pattern_cleared">Pattern cleared</string>
     <string name="pl_access_pattern_cell_added">Cell added</string>
-    <string name="pl_access_pattern_cell_added_verbose">Cell <xliff:g id="cell_index" example="3">%1$s</xliff:g> added</string>
+    <string name="pl_access_pattern_cell_added_verbose">Cell <xliff:g example="3" id="cell_index">%1$s</xliff:g> added</string>
     <string name="pl_access_pattern_detected">Pattern completed</string>
     <string name="pl_access_pattern_area">Pattern area.</string>
-    
+
+
+    <!--version 1.2.2-->
+    <string name="select_kid_apps">برنامه های مجاز کودک را انتخاب نمایید</string>
 </resources>

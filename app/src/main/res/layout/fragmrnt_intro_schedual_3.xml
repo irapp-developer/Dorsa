@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_cal_mainCoord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/frg_intro_schedual_top_apps_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!--icon number 2-->
+                <ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/grid_kidd_app_cardView_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/grid_kidd_app_img_2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_chrome"
+                                />
+                            <ir.dorsa.dorsaworld.other.CTextView
+                                android:id="@+id/grid_kidd_app_name_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/grid_kidd_app_img_2"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Chrome"
+                                />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </ir.dorsa.dorsaworld.other.squareRelativeLayout>
+                <!--icon number 2-->
+                <ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/grid_kidd_app_cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardBackgroundColor="#eee"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/grid_kidd_app_img"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_music"
+                                />
+                            <ir.dorsa.dorsaworld.other.CTextView
+                                android:id="@+id/grid_kidd_app_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/grid_kidd_app_img"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Music"
+                                />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </ir.dorsa.dorsaworld.other.squareRelativeLayout>
+                <!--icon number 3-->
+                <ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/grid_kidd_app_cardView_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardBackgroundColor="#eee"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/grid_kidd_app_img_3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_map"
+                                />
+                            <ir.dorsa.dorsaworld.other.CTextView
+                                android:id="@+id/grid_kidd_app_name_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/grid_kidd_app_img_3"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Map"
+                                />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </ir.dorsa.dorsaworld.other.squareRelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        
+        <View
+            android:id="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_alignBottom="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_alignRight="@+id/frg_intro_schedual_top_apps_scroll"
+            android:background="#a0000000"
+            />
+        <ImageView
+            android:id="@+id/frg_intro_schedual_top_apps_daily_limit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_schedual_2"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_below="@+id/frg_intro_schedual_top_apps_daily_limit"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_schedual_4"
+            />
+        
+       <View
+           android:id="@+id/frg_intro_schedual_top_apps_top_over_1"
+           android:layout_width="match_parent"
+           android:layout_height="170dp"
+           android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+           android:background="#a0000000"
+           />
+        <View
+            android:id="@+id/frg_intro_schedual_top_apps_top_over_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_marginTop="240dp"
+            android:background="#a0000000"
+            />
+        <View
+            android:id="@+id/frg_intro_schedual_top_apps_top_over_3"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_marginTop="170dp"
+            android:layout_alignParentLeft="true"
+            android:background="#a0000000"
+            />
+        <View
+            android:id="@+id/frg_intro_schedual_top_apps_top_over_4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="170dp"
+            android:layout_alignParentLeft="true"
+            android:background="#a0000000"
+            />
+        <ir.dorsa.dorsaworld.other.cButton
+            android:id="@+id/frg_intro_schedual_daily_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_trans_green"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="متوجه شدم"
+            
+            />
+        
+        
+        <ImageView
+            android:id="@+id/frg_intro_schedual_top_apps_hole"
+            android:layout_width="70dp"
+            android:layout_height="70dp" 
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:scaleType="fitXY"
+            android:src="@drawable/hole_trans_dark"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="170dp"
+            />
+        
+        <ImageView
+            android:id="@+id/frg_intro_schedual_top_apps_hand"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="110dp"
+            android:src="@drawable/hand_click"
+            />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_schedual_top_apps_top_text_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_hand"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="به طور مثال اگر این خانه را تیک بزنید کودک فقط مجاز خواهد بود برنامه انتخابی رافقط در روز یکشنبه و از ساعت ۱۵.۳۰ الی ۱۶ اجرا نماید"
+            />
+        
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_schedual_top_apps_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentTop="true"
+            android:padding="20dp"
+            android:gravity="right|center_vertical"
+            android:textSize="16sp"
+            android:textColor="#99cc00"
+            android:text="زمانبندی مصرف هفتگی"
+            />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_schedual_top_apps_top_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_title"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="با انتخاب هر یک از خانه ها تعیین می نمایید که کودک این برنامه را چه روزی و از چه ساعتی تا چه ساعتی مجاز است که استفاده نماید"
+            />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_schedual_top_apps_top_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_top_text_1"
+            android:padding="10dp"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:textColor="#ff4444"
+            android:text="نکته : اگر شما هیچ یک از خانه ها را انتخاب نمایید کودک می تواند در تمام طول روزهای هفته از برنامه استفاده نماید"
+            />
+        
+       </RelativeLayout>
+</ScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

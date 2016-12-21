@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_cal_mainCoord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/frg_intro_schedual_top_apps_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+<!--icon number 2-->
+                <ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/grid_kidd_app_cardView_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                       
+                        <ImageView
+                            android:id="@+id/grid_kidd_app_img_2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_chrome"
+                            />
+                        <ir.dorsa.dorsaworld.other.CTextView
+                            android:id="@+id/grid_kidd_app_name_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/grid_kidd_app_img_2"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:text="Chrome"
+                            />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                </ir.dorsa.dorsaworld.other.squareRelativeLayout>
+                <!--icon number 2-->
+                <ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/grid_kidd_app_cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardBackgroundColor="#eee"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/grid_kidd_app_img"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_music"
+                                />
+                            <ir.dorsa.dorsaworld.other.CTextView
+                                android:id="@+id/grid_kidd_app_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/grid_kidd_app_img"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Music"
+                                />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </ir.dorsa.dorsaworld.other.squareRelativeLayout>
+                <!--icon number 3-->
+                <ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/grid_kidd_app_cardView_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardBackgroundColor="#eee"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/grid_kidd_app_img_3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_map"
+                                />
+                            <ir.dorsa.dorsaworld.other.CTextView
+                                android:id="@+id/grid_kidd_app_name_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/grid_kidd_app_img_3"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Map"
+                                />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </ir.dorsa.dorsaworld.other.squareRelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        
+        <View
+            android:id="@+id/frg_intro_schedual_top_apps_top_over"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_alignBottom="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_alignRight="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_marginLeft="120dp"
+            android:background="#a0000000"
+            />
+        <ImageView
+            android:id="@+id/frg_intro_schedual_top_apps_top_circle"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" 
+            android:layout_alignTop="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_alignBottom="@+id/frg_intro_schedual_top_apps_scroll"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/hole_trans_dark"
+            />
+        
+
+        <RelativeLayout
+            android:id="@+id/frg_intro_schedual_daily_Rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frg_intro_schedual_top_apps_scroll"
+            android:background="@drawable/intro_schedual_1"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#a0000000"
+                />
+</RelativeLayout>
+        <ImageView
+            android:id="@+id/frg_intro_schedual_daily_hand"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_alignLeft="@+id/frg_intro_schedual_top_apps_top_circle"
+            android:layout_alignTop="@+id/frg_intro_schedual_top_apps_top_circle"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/hand_click"
+            />
+        
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_schedual_daily_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/frg_intro_schedual_daily_hand"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="برنامه ای را که قصد دارید برای کودک محدودیت زمانی  تعیین نمایید را انتخاب نمایید تا به رنگ سبز در بی آید"
+            />
+        
+        <ir.dorsa.dorsaworld.other.cButton
+            android:id="@+id/frg_intro_schedual_daily_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:layout_below="@+id/frg_intro_schedual_daily_text_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_trans_green"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="متوجه شدم"
+            />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="#99cc00"
+            android:text="انتخاب برنامه"
+            />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

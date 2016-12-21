@@ -3,267 +3,228 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgr_default"
+    android:background="@drawable/bgr_nature"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="dorsa.psb.com.dorsa.MainActivity">
-
-    <include
-        layout="@layout/bug"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="100dp"
-        android:layout_marginLeft="50dp" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_alignBottom="@+id/monster_2_rel"
-        android:layout_alignLeft="@+id/monster_2_rel"
-        android:layout_alignRight="@+id/monster_2_rel"
-        android:layout_marginBottom="-13dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:src="@drawable/anim_shadow" />
-
-
+    tools:context="ir.dorsa.dorsaworld.MainActivity">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
     <RelativeLayout
-        android:id="@+id/monster_2_rel"
-        android:layout_width="80dp"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="30dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/monster_2" />
-
-        <ImageView
-            android:id="@+id/monster_2_eye"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@anim/monster_2_eye" />
-    </RelativeLayout>
-
-    <dorsa.psb.com.dorsa.other.CTextView
-        android:id="@+id/frg_intro_1_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:text="افزودن یک کودک"
-        android:textColor="#fff"
-        android:textSize="17sp" />
-
-    <LinearLayout
-        android:id="@+id/frg_add_kid_details_sex_linear"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/frg_intro_1_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:weightSum="100">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="11" />
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="34">
-            <ImageView
-                android:id="@+id/frg_add_kid_details_sex_male"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/icon_boy" />
-            <ImageView
-                android:id="@+id/frg_add_kid_details_sex_male_stroke"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/stroke_orange"
-                android:visibility="invisible" />
-        </RelativeLayout>
-      
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10" />
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="34">
-            <ImageView
-                android:id="@+id/frg_add_kid_details_sex_fmale"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/icon_girl" />
-            <ImageView
-                android:id="@+id/frg_add_kid_details_sex_fmale_stroke"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/stroke_orange" 
-                android:visibility="invisible"
-                
-                />
-        </RelativeLayout>
-    </LinearLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/frg_add_kid_details_name_linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
-        android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
-        android:layout_below="@+id/frg_add_kid_details_sex_linear"
-        android:layout_marginTop="10dp">
-        <dorsa.psb.com.dorsa.other.CTextView
-            android:id="@+id/frg_add_kid_details_name_hint"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/frg_add_kid_details_name_edittext"
-            android:layout_alignTop="@+id/frg_add_kid_details_name_edittext"
-            android:gravity="right|center_vertical"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:text="نام"
-            android:textColor="@color/colorYellow"
-            android:textSize="12sp" />
-
-        <dorsa.psb.com.dorsa.other.cEditText
-            android:id="@+id/frg_add_kid_details_name_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right|center_vertical"
-            android:singleLine="true"
-            android:textColor="#fff"
-            android:background="@drawable/edittext_yellow"
-            android:textCursorDrawable="@drawable/cursor_yellow_1"
-            android:textSize="14sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/frg_add_kid_details_birth_linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
-        android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
-        android:layout_below="@+id/frg_add_kid_details_name_linear"
-        android:layout_marginTop="20dp">
-        <dorsa.psb.com.dorsa.other.CTextView
-            android:id="@+id/frg_add_kid_details_birth_hint"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/frg_add_kid_details_birth_text"
-            android:layout_alignTop="@+id/frg_add_kid_details_birth_text"
-            android:gravity="right|center_vertical"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:text="تاریخ تولد"
-            android:textColor="@color/colorYellow"
-            android:textSize="12sp" />
-
-        <dorsa.psb.com.dorsa.other.CTextView
-            android:id="@+id/frg_add_kid_details_birth_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right|center_vertical"
-            android:background="@drawable/edittext_yellow"
-            android:textCursorDrawable="@drawable/cursor_yellow_1"
-            android:singleLine="true"
-            android:textColor="#fff"
-            android:textSize="14sp" />
-    </RelativeLayout>
-    
-    
-    <dorsa.psb.com.dorsa.other.cButton
-        android:id="@+id/frg_add_kid_details_btn_add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
-        android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
-        android:layout_below="@+id/frg_add_kid_details_birth_linear"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_yellow"
-        android:textColor="@color/ButtonText"
-        android:textSize="14sp"
-        android:text="افزودن"
-        />
-
-    <ImageView
-        android:id="@+id/frg_add_kid_details_tick_sex"
-        android:layout_width="20dp"
-        android:layout_height="match_parent"
-        android:layout_toRightOf="@+id/frg_add_kid_details_sex_linear"
-        android:layout_alignTop="@+id/frg_add_kid_details_sex_linear"
-        android:layout_alignBottom="@+id/frg_add_kid_details_sex_linear"
-        android:layout_marginLeft="5dp"
-        android:src="@drawable/icon_tick"
-        android:visibility="invisible"
-        />
-    <ImageView
-        android:id="@+id/frg_add_kid_details_tick_name"
-        android:layout_width="20dp"
-        android:layout_height="match_parent"
-        android:layout_toRightOf="@+id/frg_add_kid_details_name_linear"
-        android:layout_alignTop="@+id/frg_add_kid_details_name_linear"
-        android:layout_alignBottom="@+id/frg_add_kid_details_name_linear"
-        android:layout_marginLeft="5dp"
-        android:src="@drawable/icon_tick"
-        android:visibility="invisible"
-        />
-
-    <ImageView
-        android:id="@+id/frg_add_kid_details_tick_birth"
-        android:layout_width="20dp"
-        android:layout_height="match_parent"
-        android:layout_toRightOf="@+id/frg_add_kid_details_birth_linear"
-        android:layout_alignTop="@+id/frg_add_kid_details_birth_linear"
-        android:layout_alignBottom="@+id/frg_add_kid_details_birth_linear"
-        android:layout_marginLeft="5dp"
-        android:src="@drawable/icon_tick"
-        android:visibility="invisible"
-        />
-    <!--<dorsa.psb.com.dorsa.other.cButton
-        android:id="@+id/frg_intro_1_accept"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@+id/frg_intro_1_desc"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/button_yellow"
-        android:textColor="#006064"
-        android:textSize="12sp"
-        android:text="می پذیرم"
-        />
-
-
-    <dorsa.psb.com.dorsa.other.cButton
-        android:id="@+id/frg_intro_1_exit"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/button_gray"
-        android:textColor="#fff"
-        android:textSize="12sp"
-        android:text="خروج"
-        />-->
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgr_round_dialog_white"
+        android:paddingRight="10dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="افزودن یک کودک"
+            android:textColor="#29daee"
+            android:textSize="17sp" />
 
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/frg_intro_2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_intro_1_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="جنسیت کودک را انتخاب نمایید"
+            android:textColor="#29daee"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/frg_add_kid_details_sex_linear"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/frg_intro_2_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="34">
+
+                <ImageView
+                    android:id="@+id/frg_add_kid_details_sex_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/boy_avatar_new" />
+
+                <ImageView
+                    android:id="@+id/frg_add_kid_details_sex_male_stroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stroke_orange"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="34">
+
+                <ImageView
+                    android:id="@+id/frg_add_kid_details_sex_fmale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/girl_avatar_new" />
+
+                <ImageView
+                    android:id="@+id/frg_add_kid_details_sex_fmale_stroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stroke_orange"
+                    android:visibility="invisible"
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/frg_add_kid_details_name_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
+            android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
+            android:layout_below="@+id/frg_add_kid_details_sex_linear"
+            android:layout_marginTop="10dp">
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:id="@+id/frg_add_kid_details_name_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/frg_add_kid_details_name_edittext"
+                android:layout_alignTop="@+id/frg_add_kid_details_name_edittext"
+                android:gravity="right|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:text="نام"
+                android:textColor="#29daee"
+                android:textSize="12sp" />
+
+            <ir.dorsa.dorsaworld.other.cEditText
+                android:id="@+id/frg_add_kid_details_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_yellow"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/cursor_yellow_1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frg_add_kid_details_birth_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
+            android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
+            android:layout_below="@+id/frg_add_kid_details_name_linear"
+            android:layout_marginTop="20dp">
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:id="@+id/frg_add_kid_details_birth_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/frg_add_kid_details_birth_text"
+                android:layout_alignTop="@+id/frg_add_kid_details_birth_text"
+                android:gravity="right|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:text="تاریخ تولد"
+                android:textColor="#29daee"
+                android:textSize="12sp" />
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:id="@+id/frg_add_kid_details_birth_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_yellow"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/cursor_yellow_1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/frg_add_kid_details_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/frg_add_kid_details_sex_linear"
+            android:layout_alignRight="@+id/frg_add_kid_details_sex_linear"
+            android:layout_below="@+id/frg_add_kid_details_birth_linear"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/btn_add_kid"
+            android:text="افزودن"
+            android:textColor="@color/ButtonText"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/frg_add_kid_details_tick_sex"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/frg_add_kid_details_sex_linear"
+            android:layout_alignTop="@+id/frg_add_kid_details_sex_linear"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/frg_add_kid_details_sex_linear"
+            android:src="@drawable/icon_tick_blue"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/frg_add_kid_details_tick_name"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/frg_add_kid_details_name_linear"
+            android:layout_alignTop="@+id/frg_add_kid_details_name_linear"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/frg_add_kid_details_name_linear"
+            android:src="@drawable/icon_tick_blue"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/frg_add_kid_details_tick_birth"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/frg_add_kid_details_birth_linear"
+            android:layout_alignTop="@+id/frg_add_kid_details_birth_linear"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/frg_add_kid_details_birth_linear"
+            android:src="@drawable/icon_tick_blue"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>
+
+    
 
 </RelativeLayout>

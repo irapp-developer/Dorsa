@@ -21,7 +21,7 @@
     android:background="@color/colorPrimary"
          />
     
-      <dorsa.psb.com.dorsa.other.CTextView 
+      <ir.dorsa.dorsaworld.other.CTextView 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:layout_alignTop="@+id/dialog_ask_download_topbgr"
@@ -37,7 +37,7 @@
           android:text="نام برنامه"
           
          />
-     <dorsa.psb.com.dorsa.other.cEditText
+     <ir.dorsa.dorsaworld.other.cEditText
     android:id="@+id/dialog_ask_text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -59,7 +59,7 @@
     android:orientation="horizontal"
     android:weightSum="2"
     >
-       <dorsa.psb.com.dorsa.other.cButton 
+       <ir.dorsa.dorsaworld.other.cButton 
          android:id="@+id/dialog_ask_btn_no"
     android:layout_width="0dp"
     android:layout_height="match_parent"
@@ -74,7 +74,7 @@
     android:layout_weight="0.02"
     android:background="#ffffff"
            />
-       <dorsa.psb.com.dorsa.other.cButton 
+       <ir.dorsa.dorsaworld.other.cButton 
          android:id="@+id/dialog_ask_btn_yes"
     android:layout_width="0dp"
     android:layout_height="match_parent"

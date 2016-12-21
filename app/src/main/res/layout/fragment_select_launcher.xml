@@ -8,10 +8,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="dorsa.psb.com.dorsa.MainActivity"
+    tools:context="ir.dorsa.dorsaworld.MainActivity"
     android:background="@drawable/bgr_default"
     >
-    <dorsa.psb.com.dorsa.other.CTextView
+    <ir.dorsa.dorsaworld.other.CTextView
         android:id="@+id/frg_select_launcher_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:textColor="#fff"
         android:text="انتخاب برنامه"
         />
-    <dorsa.psb.com.dorsa.other.CTextView
+    <ir.dorsa.dorsaworld.other.CTextView
         android:id="@+id/frg_select_launcher_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:text="@string/select_launcher"
         />
    
-    <dorsa.psb.com.dorsa.other.cButton
+    <ir.dorsa.dorsaworld.other.cButton
         android:id="@+id/frg_select_launcher_accept"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -47,9 +47,4 @@
         android:textSize="12sp"
         android:text="تایید"
         />
-    
-    
-   
-    
-    
 </RelativeLayout>

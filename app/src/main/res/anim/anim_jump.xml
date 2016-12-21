@@ -5,23 +5,23 @@
         android:duration="400"
         android:fillAfter="true"
         android:fillEnabled="true"
-        android:fromXScale="100%"
-        android:fromYScale="100%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
         android:pivotX="50%"
         android:pivotY="100%"
-        android:toXScale="100%"
-        android:toYScale="80%" />
+        android:toXScale="1.0"
+        android:toYScale="0.8" />
     <scale
         android:duration="100"
         android:fillAfter="true"
         android:fillEnabled="true"
-        android:fromXScale="100%"
-        android:fromYScale="100%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
         android:pivotX="50%"
         android:pivotY="100%"
         android:startOffset="400"
-        android:toXScale="80%"
-        android:toYScale="125%" />
+        android:toXScale="0.8"
+        android:toYScale="1.25" />
     <translate
         android:duration="400"
         android:fillAfter="true"
@@ -45,13 +45,13 @@
         android:fillAfter="true"
         android:fillBefore="false"
         android:fillEnabled="true"
-        android:fromXScale="100%"
-        android:fromYScale="100%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
         android:pivotX="50%"
         android:pivotY="100%"
         android:startOffset="500"
-        android:toXScale="125%"
-        android:toYScale="100%" />
+        android:toXScale="1.25"
+        android:toYScale="1.0" />
     <!--Reverse-->
     <rotate
         android:duration="400"

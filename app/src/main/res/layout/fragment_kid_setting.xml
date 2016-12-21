@@ -6,17 +6,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:paddingTop="5dp">
-
+        android:paddingTop="5dp"
+        android:background="#eeeeee">
+ 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingRight="5dp"
-            android:paddingLeft="5dp"
-            android:background="#eeeeee">
+            android:paddingLeft="5dp">
 
-            <dorsa.psb.com.dorsa.other.CTextView
+            <ir.dorsa.dorsaworld.other.CTextView
                 android:id="@+id/act_parent_child_sett_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
                 android:paddingRight="10dp"
                 android:gravity="right"
                 android:text="تنظیمات دسترسی"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/Color_red_girl"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -53,7 +53,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_hide" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_hide_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -65,7 +65,7 @@
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_hide_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                     android:layout_toLeftOf="@id/act_parent_child_hide_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="برنامه  فقط در پس زمینه اجرا خواهد شد"
+                    android:text="با فعال نمودن آن، تنظمیات زیر بدون اینکه کودک شما متوجه باشد مراقب کودک شما خواهد بود"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
 
@@ -98,7 +98,7 @@
                     android:layout_centerVertical="true"
                     android:padding="5dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bgr_default"
+                    android:src="@drawable/bgr_default_thumb"
                     />
 
                 <ImageView
@@ -112,7 +112,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_img" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_background_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -124,7 +124,7 @@
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_background_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_name" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_app_name_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -176,7 +176,7 @@
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_app_name_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -202,13 +202,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/act_parent_child_sett_app_name">
 
-                <android.support.v7.widget.SwitchCompat
-                    android:id="@+id/act_parent_child_max_sound_switch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_alignParentLeft="true"
-                    android:background="@android:color/transparent"
-                    android:checked="false" />
 
                 <ImageView
                     android:id="@+id/act_parent_child_max_sound_icon"
@@ -221,19 +214,18 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_sound" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_max_sound_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_toLeftOf="@id/act_parent_child_max_sound_icon"
-                    android:layout_toRightOf="@id/act_parent_child_max_sound_switch"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="صدای ماکزیمم دستگاه"
+                    android:text="حداکثر صدای دستگاه"
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_max_sound_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -241,26 +233,48 @@
                     android:layout_toLeftOf="@id/act_parent_child_max_sound_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text=" صدای دستگاه شما در حالت ماکزیممی قرار خواهد گرفت"
+                    android:text="حداکثر صدای دستگاه زمان اجرای درسا کودک"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
-
+                <ir.dorsa.dorsaworld.other.CTextView
+                    android:id="@+id/act_parent_child_max_sound_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/act_parent_child_max_sound_desc"
+                    android:layout_alignRight="@+id/act_parent_child_max_sound_seekbar"
+                    android:layout_alignLeft="@+id/act_parent_child_max_sound_seekbar"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="50"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+                <SeekBar
+                    android:id="@+id/act_parent_child_max_sound_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_parent_child_max_sound_percent"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    />
+              
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.3dp"
-                    android:layout_below="@id/act_parent_child_max_sound_desc"
+                    android:layout_below="@id/act_parent_child_max_sound_seekbar"
                     android:layout_marginTop="10dp"
                     android:background="#767676" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/act_parent_child_sett_airplane"
+                android:id="@+id/act_parent_child_sett_call"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/act_parent_child_sett_max_sound">
 
                 <android.support.v7.widget.SwitchCompat
-                    android:id="@+id/act_parent_child_airplane_switch"
+                    android:id="@+id/act_parent_child_call_switch"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_alignParentLeft="true"
@@ -268,44 +282,44 @@
                     android:checked="false" />
 
                 <ImageView
-                    android:id="@+id/act_parent_child_airplane_icon"
+                    android:id="@+id/act_parent_child_call_icon"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:layout_alignBottom="@+id/act_parent_child_airplane_desc"
+                    android:layout_alignBottom="@+id/act_parent_child_call_desc"
                     android:layout_alignParentRight="true"
-                    android:layout_alignTop="@+id/act_parent_child_airplane_title"
+                    android:layout_alignTop="@+id/act_parent_child_call_title"
                     android:layout_marginBottom="-10dp"
                     android:padding="10dp"
-                    android:src="@drawable/icon_airplane" />
+                    android:src="@drawable/icon_call" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
-                    android:id="@+id/act_parent_child_airplane_title"
+                <ir.dorsa.dorsaworld.other.CTextView
+                    android:id="@+id/act_parent_child_call_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_toLeftOf="@id/act_parent_child_airplane_icon"
-                    android:layout_toRightOf="@id/act_parent_child_airplane_switch"
+                    android:layout_toLeftOf="@id/act_parent_child_call_icon"
+                    android:layout_toRightOf="@id/act_parent_child_call_switch"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="حالت هواپیما"
+                    android:text="عدم پاسخ به تماس"
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
-                    android:id="@+id/act_parent_child_airplane_desc"
+                <ir.dorsa.dorsaworld.other.CTextView
+                    android:id="@+id/act_parent_child_call_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/act_parent_child_airplane_title"
-                    android:layout_toLeftOf="@id/act_parent_child_airplane_icon"
+                    android:layout_below="@+id/act_parent_child_call_title"
+                    android:layout_toLeftOf="@id/act_parent_child_call_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text=" موبایل از سرویس خارج گشته و امتکان تماس وجود ندارد"
+                    android:text="با فعال نمودن آن، کودک قادر به پاسخ گویی تماس دریافتی نیست"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.3dp"
-                    android:layout_below="@id/act_parent_child_airplane_desc"
+                    android:layout_below="@id/act_parent_child_call_desc"
                     android:layout_marginTop="10dp"
                     android:background="#767676" />
             </RelativeLayout>
@@ -314,7 +328,7 @@
                 android:id="@+id/act_parent_child_sett_lock_volume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/act_parent_child_sett_airplane">
+                android:layout_below="@+id/act_parent_child_sett_call">
 
                 <android.support.v7.widget.SwitchCompat
                     android:id="@+id/act_parent_child_lock_volume_switch"
@@ -335,7 +349,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_note" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_lock_volume_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -343,11 +357,11 @@
                     android:layout_toRightOf="@id/act_parent_child_lock_volume_switch"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="قفل ولوم"
+                    android:text="قفل صدا"
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_lock_volume_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -355,7 +369,7 @@
                     android:layout_toLeftOf="@id/act_parent_child_lock_volume_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="امکان زیاد و یا کم کردن صدا غیر فعال می گردد"
+                    android:text="با فعال نمودن آن، کودک قادر به کم و زیاد کردن صدای دستگاه نیست"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
 
@@ -392,7 +406,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_reset" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_restart_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -400,11 +414,11 @@
                     android:layout_toRightOf="@id/act_parent_child_restart_switch"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="اجرا هنگام روشن شدن دستگاه"
+                    android:text="اجرا هنگام راه اندازی مجدد دستگاه "
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_restart_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -412,7 +426,7 @@
                     android:layout_toLeftOf="@id/act_parent_child_restart_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="بعد از دیست شدن گوشی برنامه به ثورت خودکار راه اندازی گردید"
+                    android:text="با فعال نمودن آن، بعد از راه اندازی مجدد دستگاه یا روشن کردن آن، برنامه بطور خودکار اجرا شود"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
 
@@ -449,7 +463,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_statusbar" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_status_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -457,11 +471,11 @@
                     android:layout_toRightOf="@id/act_parent_child_status_switch"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="استاتوس بار"
+                    android:text="مخفی سازی نوار بالا"
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_status_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -469,7 +483,7 @@
                     android:layout_toLeftOf="@id/act_parent_child_status_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="استاتوس بار(قسمت مشکی بالای صفحه) غیر فعال می گردد"
+                    android:text="با فعال نمودن آن، نوار بالا برای کودک مخفی می گردد"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
 
@@ -506,7 +520,7 @@
                     android:padding="10dp"
                     android:src="@drawable/icon_screen" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_screen_title"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -518,7 +532,7 @@
                     android:textColor="#767676"
                     android:textSize="13sp" />
 
-                <dorsa.psb.com.dorsa.other.CTextView
+                <ir.dorsa.dorsaworld.other.CTextView
                     android:id="@+id/act_parent_child_screen_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -526,7 +540,7 @@
                     android:layout_toLeftOf="@id/act_parent_child_screen_icon"
                     android:gravity="center_vertical|right"
                     android:paddingRight="10dp"
-                    android:text="صفحه نمایش روشن خواهد ماند"
+                    android:text="با فعال نمودن آن، صفحه نمایش دستگاه برای کودک روشن خواهد ماند"
                     android:textColor="#a1a1a1"
                     android:textSize="10sp" />
                 <View

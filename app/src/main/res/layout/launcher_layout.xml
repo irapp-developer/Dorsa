@@ -3,9 +3,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:strokeAttrs="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bgr_default"
     android:id="@+id/act_launcher_parentRel"
+    
     >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgr_default_thumb"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:id="@+id/act_launcher_bgr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:src="@drawable/bgr_default_thumb"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:id="@+id/act_launcher_bug_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/baloon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+            android:scaleType="fitStart"
+            android:src="@drawable/baloon" />
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            layout="@layout/bug"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/monster_2_rel"
+            android:layout_alignRight="@+id/monster_2_rel"
+            android:layout_alignBottom="@+id/monster_2_rel"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="-5dp"
+            android:src="@drawable/anim_shadow"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/monster_2_rel"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="30dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/monster_3_body"
+                />
+            <ImageView
+                android:id="@+id/monster_2_eye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@anim/monster_3_eye"
+                />
+        </RelativeLayout>
+        
+        
+        
+        
+        
+    </RelativeLayout>
+    
+   
 <RelativeLayout
     android:id="@+id/act_launcher_actionbar"
     android:layout_width="match_parent"
@@ -20,21 +97,59 @@
         android:paddingBottom="10dp"
         android:paddingRight="10dp"
         android:paddingLeft="5dp"
+        android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/icon_close"
+        android:src="@drawable/icon_exit"
         />
-    <dorsa.psb.com.dorsa.other.CTextView
+
+    <ImageView
+        android:id="@+id/act_launcher_switch_parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/act_launcher_close"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_parent"
+        />
+    
+    <ir.dorsa.dorsaworld.other.CTextView
         android:id="@+id/act_launcher_kid_avatar"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/act_launcher_kid_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
         android:gravity="center"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:text="مهدی شجاعیان"
         android:textColor="#fff"
         strokeAttrs:strokeWidth="15"
 
         />
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/act_launcher_clock_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/act_launcher_kid_name"
+        android:layout_below="@+id/act_launcher_kid_avatar"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:text="۷:۴۵"
+        />
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/act_launcher_clock_day"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/act_launcher_clock_clock"
+        android:layout_below="@+id/act_launcher_kid_avatar"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:text="پنجشنبه ٬ ۱۷ شهریور"
+        />
+    
     <ImageView
         android:id="@+id/act_launcher_kid_name"
         android:layout_width="60dp"
@@ -45,7 +160,13 @@
         android:padding="5dp"
         android:src="@drawable/icon_boy"
         />
+
+ 
 </RelativeLayout>
+    
+   
+    
+    
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -53,80 +174,75 @@
         android:background="@drawable/shadow"
         />
     <!--android:background="@drawable/bgr_round_blue"-->
-    
-    <RelativeLayout
-        android:id="@+id/act_launcher_rel_calendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/act_launcher_linear_shortcuts"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        />
+   
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:background="@drawable/drop_shadow_2"
+        />
+    <LinearLayout
+        android:id="@+id/act_launcher_linear_shortcuts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
         >
-    <ImageView
-        android:id="@+id/act_launcher_clock_icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_toRightOf="@+id/act_launcher_clock_clock"
-        android:padding="10dp"
-        android:src="@drawable/icon_clock"
-        />
-    <dorsa.psb.com.dorsa.other.StrokeTextView
-        android:id="@+id/act_launcher_clock_clock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/act_launcher_calendar_icon"
-        android:layout_alignTop="@+id/act_launcher_clock_icon"
-        android:layout_alignBottom="@+id/act_launcher_clock_icon"
-        android:gravity="center_vertical"
-        android:paddingLeft="5dp"
-        android:paddingRight="10dp"
-        android:textSize="15sp"
-        strokeAttrs:strokeColor="#adffffff"
-        strokeAttrs:strokeTextColor="#000000"
-        strokeAttrs:strokeWidth="10"
-        android:text="۷:۴۵"
-        />
-    <ImageView
-        android:id="@+id/act_launcher_calendar_icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/act_launcher_clock_icon"
-        android:layout_toRightOf="@+id/act_launcher_clock_day"
-        android:padding="10dp"
-        android:src="@drawable/icon_calendar"
-        />
-    <dorsa.psb.com.dorsa.other.StrokeTextView
-        android:id="@+id/act_launcher_clock_day"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/act_launcher_clock_icon"
-        android:layout_alignBottom="@+id/act_launcher_clock_icon"
-        android:gravity="center_vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="30dp"
-        android:textSize="15sp"
-        strokeAttrs:strokeColor="#adffffff"
-        strokeAttrs:strokeTextColor="#000000"
-        strokeAttrs:strokeWidth="10"
-        android:text="پنجشنبه ٬۱۷ شهریور"
-        />
-    </RelativeLayout>
+        
+        
+    </LinearLayout>
+    
+    
+   
+  
+    
+  
     
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/act_launcher_actionbar"
-        android:layout_above="@+id/act_launcher_rel_calendar"
+        android:layout_above="@+id/act_launcher_linear_shortcuts"
         >
+      
         
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/act_launcher_mainRel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <android.support.v4.view.ViewPager
+            android:id="@+id/act_launcher_mainPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:background="#70000000"
+            android:animationCache="true"
+            >
+            <android.support.v4.view.PagerTitleStrip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom" />
             
-            
-            ></android.support.v7.widget.RecyclerView>
+        </android.support.v4.view.ViewPager>
         
     </FrameLayout>
+    
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/act_launcher_close_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_launcher_linear_shortcuts"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:background="@drawable/round_dark_black"
+        android:visibility="invisible"
+        />
     
 </RelativeLayout>

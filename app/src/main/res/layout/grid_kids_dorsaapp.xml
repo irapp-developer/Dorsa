@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.dorsa.dorsaworld.other.squareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:id="@+id/grid_kidd_app_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#eeeeee"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:id="@+id/grid_kidd_app_wifi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/icon_wifi_off"
+            />
+        <ImageView
+            android:id="@+id/grid_kidd_app_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/icon_dots"
+            />
+        <ImageView
+            android:id="@+id/grid_kidd_app_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgr_default"
+            />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/grid_kidd_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid_kidd_app_img"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="12sp"
+            
+            android:text="نام برنامه"
+            />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/grid_kidd_app_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:textColor="#818181"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="دانلود"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    
+</android.support.v7.widget.CardView>
+   
+    
+    
+</ir.dorsa.dorsaworld.other.squareRelativeLayout>

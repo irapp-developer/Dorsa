@@ -8,8 +8,6 @@
     android:id="@+id/row_select_bgr"
     android:layout_width="120dp"
     android:layout_height="120dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
     android:scaleType="centerCrop"
     android:src="@drawable/bgr_default"
     />
@@ -17,8 +15,6 @@
         android:id="@+id/row_select_stroke"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:src="@drawable/stroke_black"
         />
     

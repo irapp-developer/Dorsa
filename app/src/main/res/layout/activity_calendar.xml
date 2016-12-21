@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_cal_mainCoord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/act_calendar_top_apps_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/act_calendar_top_apps_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/act_calendar_daily_Rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_calendar_top_apps_scroll">
+
+            <CheckBox
+                android:id="@+id/act_calendar_daily_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:id="@+id/act_calendar_daily_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/act_calendar_daily_checkBox"
+                android:layout_alignTop="@+id/act_calendar_daily_checkBox"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/act_calendar_daily_checkBox"
+                android:gravity="right|center_vertical"
+                android:text="محدودیت روزانه"
+                android:textColor="@drawable/color_green"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/act_calendar_daily_plus"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/act_calendar_daily_time"
+                android:layout_alignTop="@+id/act_calendar_daily_time"
+                android:layout_toLeftOf="@+id/act_calendar_daily_txt1"
+                android:paddingRight="5dp"
+                android:src="@drawable/selector_plus" />
+
+            <ImageView
+                android:id="@+id/act_calendar_daily_minios"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/act_calendar_daily_time"
+                android:layout_alignTop="@+id/act_calendar_daily_time"
+                android:layout_toLeftOf="@+id/act_calendar_daily_time"
+                android:paddingRight="5dp"
+                android:src="@drawable/selector_minose" />
+
+            <ir.dorsa.dorsaworld.other.cEditText
+                android:id="@+id/act_calendar_daily_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/act_calendar_daily_plus"
+                android:maxLength="2"
+                android:numeric="integer"
+                android:padding="10dp"
+                android:text="5"
+                android:textColor="@drawable/color_green"
+                android:textSize="14sp" />
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:id="@+id/act_calendar_daily_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/act_calendar_daily_txt1"
+                android:layout_alignTop="@+id/act_calendar_daily_txt1"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/act_calendar_daily_minios"
+                android:gravity="right|center_vertical"
+                android:text="ساعت در روز"
+                android:textColor="@drawable/color_green"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/act_calendar_verLine_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/act_calendar_daily_Rel"
+            android:layout_marginTop="5dp"
+            android:background="@color/ButtonText" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_calendar_weeek_timing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/act_calendar_verLine_1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="زمانبندی مصرف هفتگی"
+            android:textColor="@color/ButtonText"
+            android:textSize="14sp" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_calendar_weeek_no_date_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/act_calendar_weeek_timing_title"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="برای این برنامه هیچگونه محدودیتی  تعیین نگردیده است"
+            android:textColor="#ff4444"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/act_calendar_weeek_reset_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/act_calendar_weeek_reset_all_icon"
+            android:layout_alignLeft="@+id/act_calendar_weeek_reset_all_text"
+            android:layout_alignRight="@+id/act_calendar_weeek_reset_all_icon"
+            android:layout_alignTop="@+id/act_calendar_weeek_reset_all_icon"
+            android:background="@drawable/button_dark_green"
+            android:padding="5dp"
+
+            />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_calendar_weeek_reset_all_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/act_calendar_weeek_reset_all_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/act_calendar_weeek_reset_all_icon"
+            android:layout_marginLeft="10dp"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="پاک کردن همه"
+            android:textColor="@color/ButtonText"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/act_calendar_weeek_reset_all_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/act_calendar_verLine_1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/act_calendar_weeek_reset_all_text"
+            android:paddingBottom="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/icon_reset" />
+
+        <LinearLayout
+            android:id="@+id/act_calendar_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_calendar_weeek_no_date_set"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ساعت"
+                android:textSize="12sp" />
+
+            <ir.dorsa.dorsaworld.other.CTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="شنبه"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="یکشنبه"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="دوشنبه"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="س شنبه"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="چ شنبه"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="پ شنبه"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="جمعه"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/act_calendar_horLine_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/act_calendar_top"
+            android:layout_marginTop="5dp"
+            android:background="#000"
+
+            />
+
+        <ListView
+            android:id="@+id/act_calendar_mainList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/act_calendar_horLine_2"
+            android:divider="#000"
+            android:dividerHeight="0.5dp"></ListView>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -2,17 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <dorsa.psb.com.dorsa.other.cViewPager xmlns:tools="http://schemas.android.com/tools"
+    <ir.dorsa.dorsaworld.other.cViewPager xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/ViewPager_firstRun"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Activity_Intro"></dorsa.psb.com.dorsa.other.cViewPager>
+        tools:context=".Activity_Intro"></ir.dorsa.dorsaworld.other.cViewPager>
     <ImageView
         android:id="@+id/baloon"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:scaleType="fitStart"
         android:src="@drawable/baloon" />
 

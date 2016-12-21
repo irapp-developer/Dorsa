@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_permissions_btn_no1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <View
+        android:id="@+id/dialog_permissions_btn_yes1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dialog_permissions_btn_linear"
+        android:layout_below="@+id/dialog_permissions_topbgr"
+        android:background="#ffffff" />
+
+    <View
+        android:id="@+id/dialog_permissions_topbgr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" />
+
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/dialog_permissions_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/dialog_permissions_topbgr"
+        android:layout_alignLeft="@+id/dialog_permissions_topbgr"
+        android:layout_alignRight="@+id/dialog_permissions_topbgr"
+        android:layout_alignTop="@+id/dialog_permissions_topbgr"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center"
+        android:text="نام برنامه"
+        android:textColor="#fff"
+        android:textSize="12sp"
+
+        />
+    <!--permission internet acces-->
+    <RelativeLayout
+        android:id="@+id/dialog_permissions_rel_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_permissions_topbgr"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/dialog_permissions_chbox_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/dialog_permissions_text_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dialog_permissions_chbox_internet"
+            android:layout_alignTop="@+id/dialog_permissions_chbox_internet"
+            android:layout_toLeftOf="@+id/dialog_permissions_chbox_internet"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="دسترسی به اینترنت"
+            android:textColor="@color/ButtonText" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/dialog_permissions_hint_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_permissions_chbox_internet"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:gravity="right|center_vertical"
+            android:text="با غیر فعال نمودن این گزینه این برنامه قادر به ارتباط با اینترنت نخواهد بود."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/dialog_permissions_hint_internet"
+            android:layout_marginTop="5dp"
+            android:background="@color/ButtonText" />
+    </RelativeLayout>
+    <!--permission addressbar acces-->
+    <RelativeLayout
+        android:id="@+id/dialog_permissions_rel_addressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_permissions_rel_internet"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/dialog_permissions_chbox_addressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/dialog_permissions_text_addressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dialog_permissions_chbox_addressbar"
+            android:layout_alignTop="@+id/dialog_permissions_chbox_addressbar"
+            android:layout_toLeftOf="@+id/dialog_permissions_chbox_addressbar"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="نمایش آدرس بار"
+            android:textColor="@color/ButtonText" />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/dialog_permissions_hint_addressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_permissions_text_addressbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:gravity="right|center_vertical"
+            android:text="با غیرفعال نمودن این گزینه ٬ آدرس بار بالای درساگرد نمایش داده نمی شود"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/dialog_permissions_hint_addressbar"
+            android:layout_marginTop="5dp"
+            android:background="@color/ButtonText" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialog_permissions_btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dialog_permissions_rel_addressbar"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ir.dorsa.dorsaworld.other.cButton
+            android:id="@+id/dialog_ask_btn_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:background="@drawable/button_blue"
+            android:text="بازگشت"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.02"
+            android:background="#ffffff" />
+
+        <ir.dorsa.dorsaworld.other.cButton
+            android:id="@+id/dialog_ask_btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:background="@drawable/button_blue"
+            android:text="ذخیره"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+    
+    
+    
+    
+

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/camera_crop_height.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/camera_crop_height.png"
+    },
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ic_rotate_left.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_rotate_left.png"
+    },
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/btn_crop_pressed.9.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/btn_crop_pressed.9.png"
+    },
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ic_rotate_right.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_rotate_right.png"
+    },
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/indicator_autocrop.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/indicator_autocrop.png"
+    },
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/camera_crop_width.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/camera_crop_width.png"
+    },
+    {
+        "merged": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/btn_crop_operator.9.png",
+        "source": "/Users/mehdi/AndroidStudioProjects/Dorsa/CopImage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/btn_crop_operator.9.png"
+    }
+]

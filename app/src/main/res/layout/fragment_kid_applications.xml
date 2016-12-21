@@ -2,7 +2,9 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+    >
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/frg_kid_app_mailList"
@@ -16,10 +18,20 @@
         app:layout_anchor="@+id/frg_kid_app_mailList"
         app:layout_anchorGravity="bottom|right|end"
         android:layout_margin="16dp"
-        android:src="@drawable/icon_add"
+        android:src="@drawable/icon_plus"
         app:backgroundTint="@color/colorPrimary"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
+        />
+    <ir.dorsa.dorsaworld.other.CTextView
+        android:id="@+id/frg_kid_apps_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="@string/hint"
+        android:visibility="gone"
         />
     
 </android.support.design.widget.CoordinatorLayout>

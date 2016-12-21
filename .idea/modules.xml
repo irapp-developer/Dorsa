@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CopImage/CopImage.iml" filepath="$PROJECT_DIR$/CopImage/CopImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dorsa.iml" filepath="$PROJECT_DIR$/Dorsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acra-4.8.2/acra-4.8.2.iml" filepath="$PROJECT_DIR$/acra-4.8.2/acra-4.8.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-processes-1.0.7/android-processes-1.0.7.iml" filepath="$PROJECT_DIR$/android-processes-1.0.7/android-processes-1.0.7.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.apache.http.legacy/org.apache.http.legacy.iml" filepath="$PROJECT_DIR$/org.apache.http.legacy/org.apache.http.legacy.iml" />
     </modules>
   </component>
 </project>

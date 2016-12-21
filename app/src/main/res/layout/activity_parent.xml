@@ -4,116 +4,117 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff">
-
-    <RelativeLayout 
+    <RelativeLayout
         android:id="@+id/act_parent_child_profile"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:background="@color/colorPrimary"
-       >
+        android:layout_height="220dp"
+        android:background="@drawable/girly_bgr"
+        >
 
-        <RelativeLayout
+
+        <ImageView
+            android:id="@+id/act_parent_child_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/act_parent_child_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icon_boy" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_parent_child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/act_parent_child_age"
+            android:layout_marginBottom="1dp"
+            android:layout_centerHorizontal="true"
+            android:text="نام کودک"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_parent_child_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/act_parent_child_switch_button"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="نام کودک"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+       <ImageView
+           android:id="@+id/act_parent_child_switch_button"
+           android:layout_width="95dp"
+           android:layout_height="45dp" 
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/btn_change_kid"
+           android:layout_marginBottom="5dp"
+           />
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_parent_child_switch_enable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/act_parent_child_icon"
+            android:layout_below="@+id/act_parent_child_icon"
+            android:layout_marginTop="10dp"
+            android:text="زمانبندی کودک"
+            android:textColor="#8391dc"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/act_parent_child_switch_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/act_parent_child_switch_enable_title"
+            android:layout_alignRight="@+id/act_parent_child_switch_enable_title"
+            android:layout_below="@+id/act_parent_child_switch_enable_title"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:visibility="gone" />
+
+        <ir.dorsa.dorsaworld.other.CTextView
+            android:id="@+id/act_parent_child_switch_enable_mode"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            
-            >
+            android:layout_alignBottom="@+id/act_parent_child_switch_enable"
+            android:layout_alignTop="@+id/act_parent_child_switch_enable"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/act_parent_child_switch_enable"
+            android:gravity="center_vertical|right"
+            android:text="یکشنبه ها از ساعت ۱۲:۴۵ تا ساعت ۱۸:۲۷"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:visibility="gone" />
 
-            <ImageView
-                android:id="@+id/act_parent_child_icon"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/icon_boy" />
-
-            <dorsa.psb.com.dorsa.other.CTextView
-                android:id="@+id/act_parent_child_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_alignTop="@+id/act_parent_child_icon"
-                android:layout_toLeftOf="@+id/act_parent_child_icon"
-                android:gravity="right|bottom"
-                android:text="نام کودک"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/act_parent_child_switch_icon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignBottom="@id/act_parent_child_icon"
-                android:layout_marginRight="5dp"
-                android:layout_toLeftOf="@id/act_parent_child_icon"
-                android:padding="5dp"
-                android:src="@drawable/icon_switch" />
-
-            <dorsa.psb.com.dorsa.other.CTextView
-                android:id="@+id/act_parent_child_change"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/act_parent_child_switch_icon"
-                android:layout_alignTop="@id/act_parent_child_switch_icon"
-                android:layout_toLeftOf="@id/act_parent_child_switch_icon"
-                android:gravity="center_vertical|right"
-                android:text="تغییر کودک"
-                android:textColor="#eeeeee"
-                android:textSize="14sp"
-                />
-            <dorsa.psb.com.dorsa.other.CTextView
-                android:id="@+id/act_parent_child_switch_enable_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignTop="@+id/act_parent_child_icon"
-                android:layout_marginLeft="20dp"
-                android:textColor="#8391dc"
-                android:textSize="12sp"
-                android:text="وضعیت برنامه"
-                />
-            <android.support.v7.widget.SwitchCompat
-                android:id="@+id/act_parent_child_switch_enable"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/act_parent_child_switch_enable_title"
-                android:layout_alignRight="@+id/act_parent_child_switch_enable_title"
-                android:layout_alignLeft="@+id/act_parent_child_switch_enable_title"
-                android:layout_marginTop="5dp"
-                android:paddingRight="10dp"
-                android:gravity="center"
-                />
-            <dorsa.psb.com.dorsa.other.CTextView
-                android:id="@+id/act_parent_child_switch_enable_mode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/act_parent_child_switch_enable"
-                android:layout_alignRight="@+id/act_parent_child_switch_enable"
-                android:layout_alignLeft="@+id/act_parent_child_switch_enable"
-                android:layout_marginTop="5dp"
-                android:gravity="center"
-                android:textColor="#8391dc"
-                android:textSize="12sp"
-                android:text="فعال"
-                />
-        </RelativeLayout>
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/act_parent_child_profile"
         android:orientation="vertical">
+
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabMode="fixed"
-            app:tabGravity="fill"
-            app:tabMaxWidth="0dp"
-            android:background="?attr/colorPrimary"
+            android:layout_height="40dp"
+            android:background="#c82a43"
             android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:tabIndicatorColor="@android:color/white"
+            app:tabBackground="@drawable/tab_bgr_blue"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/ColorOrange"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingBottom="-1dp"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabPaddingTop="-1dp"
             />
 
         <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
@@ -125,5 +126,38 @@
 
         </android.support.v4.view.ViewPager>
     </LinearLayout>
-    
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/act_parent_switch_kid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_kids"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:background="@drawable/light_overlay"
+                />
+            <ImageView
+                android:id="@+id/act_parent_child_btn_btn_schedual"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:padding="9dp"
+                android:src="@drawable/icon_clock"
+                />
+            
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
 </RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr_default"
+    >
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
+
+    <!--monsters-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/monster_3_rel"
+        android:layout_alignLeft="@+id/monster_3_rel"
+        android:layout_alignRight="@+id/monster_3_rel"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/anim_shadow" />
+
+    <RelativeLayout
+        android:id="@+id/monster_3_rel"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/monster_3_body" />
+
+        <ImageView
+            android:id="@+id/monster_3_eye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@anim/monster_3_eye" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/monster_4_rel"
+        android:layout_alignLeft="@+id/monster_4_rel"
+        android:layout_alignRight="@+id/monster_4_rel"
+        android:layout_marginBottom="-15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/anim_shadow" />
+
+    <RelativeLayout
+        android:id="@+id/monster_4_rel"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/monster_4" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

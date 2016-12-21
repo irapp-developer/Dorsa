@@ -27,7 +27,7 @@
             android:layout_alignParentLeft="true"
             android:src="@drawable/icon_back" />
         
-        <dorsa.psb.com.dorsa.other.CTextView
+        <ir.dorsa.dorsaworld.other.CTextView
             android:id="@+id/act_select_bgr_actionbar_back_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
@@ -50,7 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_above="@+id/act_select_bgr_btn_lay"
-        android:layout_marginBottom="5dp"
         android:fillViewport="true"
         >
 
@@ -73,7 +72,7 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <dorsa.psb.com.dorsa.other.cButton
+        <ir.dorsa.dorsaworld.other.cButton
             android:id="@+id/act_select_bgr_btn_cancel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -86,7 +85,7 @@
 
             />
 
-        <dorsa.psb.com.dorsa.other.cButton
+        <ir.dorsa.dorsaworld.other.cButton
             android:id="@+id/act_select_bgr_btn_ok"
             android:layout_width="0dp"
             android:layout_height="match_parent"
